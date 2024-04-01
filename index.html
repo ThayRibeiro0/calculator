@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>     
+        <div class="calculator">
+            <input id="first-input" placeholder="first input"></input>
+            <h1>+</h1>
+            <input id="second-input" placeholder="second input"></input>
+            <div class="button"></div>
+            <div class="screen">00.00</div>
+        </div>
+        <script>
+            // Using typeof
+            const button = document.querySelector('.button')
+            const firstInput = document.querySelector('#first-input')
+            const secondInput = document.querySelector('#second-input')
+            const screen = document.querySelector('.screen')
+ 
+            function addNumbers(a,b) {
+            if (typeof a === 'number' && typeof b === 'number') {
+                screen.innerHTML = a + b
+            } else screen.innerHTML = parseInt(a) + parseInt(b)
+            }
+ 
+            button.addEventListener('click', () => addNumbers(firstInput.value, secondInput.value))
+        </script>
+    </body>
+</html>
