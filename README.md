@@ -51,6 +51,8 @@ The -g flag installs http-server globally on your system, making it accessible f
 
 After the installation is complete, you can verify that http-server is installed correctly by running:
 
+**npx http-server**
 **http-server --version**
+**http-server**
 
 This command should display the version number of http-server, indicating that it's installed properly.
