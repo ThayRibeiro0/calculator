@@ -44,6 +44,7 @@ While not strictly necessary for the project setup, having Git installed can be 
 Open your terminal or command prompt and install http-server, run the following command:
 
 **npm install -g http-server**
+**npx http-server**
 
 The -g flag installs http-server globally on your system, making it accessible from any directory.
 
@@ -51,7 +52,6 @@ The -g flag installs http-server globally on your system, making it accessible f
 
 After the installation is complete, you can verify that http-server is installed correctly by running:
 
-**npx http-server**
 **http-server --version**
 **http-server**
 
